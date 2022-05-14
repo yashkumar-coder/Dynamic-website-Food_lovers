@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(food1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+     
+}
+.head{
+    position: absolute;
+    width: 60%;
+    height: 50px;
+    left: 540px;
+    color: white;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    margin-top: 8px;
+    top: 8px;
+    padding: 3px;
+}
+.head ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+ul{
+   
+    display: flex;
+    justify-content: right;
+    justify-content: space-between;
+}
+
+.head ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #29d112;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0px;
+    /* right: 0px; */
+    transition: 0.5s;
+}
+
+.head ul li:hover::after{
+    width: 100%;
+}
+
+.center{
+    position: absolute;
+    color: white;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.center h1{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.center .post{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 28px;
+    margin-bottom: 5px;
+}
+
+.inp{
+    display: block;
+    width: 70%;
+    height: 28px;
+    margin-left: 25px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+button{
+    color: white;
+    display: inline-block;
+    margin-top:21px;
+    margin-left: 150px;
+    font-size: 24px;
+    width: 167px;
+    border-radius: 27px;
+    border: 2px solid #29d112;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    position: absolute;
+    background: #20d308;
+    height: 100%;
+    width: 0;
+    border-radius: 27px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+/* list of the foods */
+
+.product{
+    display: flex;
+    width: 80%;
+    margin-left: 80px;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.productlist{
+    width: 33.33%;
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+
+#f4{
+    margin-right: 5px;
+
+}
+
+section{
+    background-color: wheat;
+}
+
+.yash{
+    background-color: wheat;
+}

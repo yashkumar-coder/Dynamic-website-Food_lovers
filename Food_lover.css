@@ -1,0 +1,84 @@
+/* UTILITY CLASSES WHEN THE IMAGE IS OVERLAP */
+
+/* .img_responsive{
+    max-width: 100%;
+} */
+
+.hero_image{
+    background: url(hero_image1.jpg) no-repeat;
+    /* -webkit-background-size: cover; */
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(17, 16, 16, 0.5);
+    font-size: 20px;
+}
+
+.hero_wrapper{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero_wrapper h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.hero_wrapper span{
+    display: block;
+    margin-left: 5rem;
+}
+
+.formc .inp{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    /* border-style: solid; */
+}
+
+.formc button{
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+    background-color: chartreuse;
+    padding: 5px;
+    border-radius: 0.5rem;
+}
+
+
+/* PRODUCTION section */
+
+.product{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0.5rem;
+}
+
+.product_list{
+    float: left;
+    width: 32.33%;
+    margin-left: 1%;
+}
+
+/* .product_list:first-of-type{
+    margin-left: 0;
+} */
+
+@media screen and (max-width: 700px) {
+    .product_list{
+        width: 100%;
+        float: none;
+    }
+}
